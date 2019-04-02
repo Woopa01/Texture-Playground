@@ -1,0 +1,6 @@
+framework module Pods_Texture_PlaygroundUITests {
+  umbrella header "Pods-Texture-PlaygroundUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

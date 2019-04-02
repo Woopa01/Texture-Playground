@@ -1,0 +1,6 @@
+framework module Pods_Texture_Playground {
+  umbrella header "Pods-Texture-Playground-umbrella.h"
+
+  export *
+  module * { export * }
+}
