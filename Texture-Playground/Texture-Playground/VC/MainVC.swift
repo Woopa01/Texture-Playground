@@ -9,16 +9,15 @@ import AsyncDisplayKit
 import RxSwift
 import RxCocoa
 import RxASControlEvent
+import Then
 
-class ViewController: ASViewController<ASDisplayNode> {
+class MainVC : ASViewController<ASDisplayNode> {
     
-    lazy var titleNode : ASTextNode = { () -> ASTextNode in
-        let node = ASTextNode()
-        node.attributedText = NSAttributedString(string: "MOS", attributes: [
+    let titleNode = ASTextNode().then {
+        $0.attributedText = NSAttributedString(string: "MOS", attributes: [
             .font: UIFont(name: "DIN Condensed", size: 55)!,
             .foregroundColor : Color.RED.getColor()])
-        return node
-    }()
+    }
     
     lazy var desc1Node : ASTextNode = { () -> ASTextNode in
         let node = ASTextNode()
@@ -60,8 +59,8 @@ class ViewController: ASViewController<ASDisplayNode> {
         node.backgroundColor = .white
         node.borderWidth = 0.5
         node.rx.event(.touchDown).subscribe(onNext: { _ in
-            print("emailButtonDidClicked")
-        })
+            self.dismiss(animated: true, completion: nil)
+            self.navigationController?.pushViewController(SignUpVC(), animated: true)        })
         return node
     }()
     
@@ -69,8 +68,6 @@ class ViewController: ASViewController<ASDisplayNode> {
         let node = ASButtonNode()
         node.setAttributedTitle(NSAttributedString(string: "이미 아이디가 있으신가요?"), for: .normal)
         node.rx.event(.touchDown).subscribe(onNext: { _ in
-            self.dismiss(animated: true, completion: nil)
-            self.navigationController?.pushViewController(SignUpVC(), animated: true)
         })
         return node
     }()
@@ -107,13 +104,6 @@ class ViewController: ASViewController<ASDisplayNode> {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-}
-
-
-extension ViewController {
-    @objc func fbBtnClicked() {
-        
     }
 }
 
