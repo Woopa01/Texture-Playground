@@ -41,12 +41,14 @@ PODS:
     - Texture/Core
   - Texture/Video (2.8):
     - Texture/Core
+  - Then (2.4.0)
 
 DEPENDENCIES:
   - RxASControlEvent
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - Texture
+  - Then
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -57,6 +59,7 @@ SPEC REPOS:
     - RxCocoa
     - RxSwift
     - Texture
+    - Then
 
 SPEC CHECKSUMS:
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
@@ -66,7 +69,8 @@ SPEC CHECKSUMS:
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   Texture: fc6e0157201f3a6e503d364c147b1872e365cef4
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
-PODFILE CHECKSUM: f745a8e1e927dcf224db6df652c62895a67238de
+PODFILE CHECKSUM: 1790a78a83682e00c58ecbdd18325f46931312bf
 
 COCOAPODS: 1.5.3
