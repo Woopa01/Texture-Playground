@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		440F9B50CB7BF53BB7D04315 /* Pods_Texture_Playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E10A7659242216AB3DA0FB /* Pods_Texture_Playground.framework */; };
+		6839DA4922772B3600AA12D6 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6839DA4822772B3600AA12D6 /* UserVC.swift */; };
+		6839DA4C22772BD200AA12D6 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 6839DA4B22772BD200AA12D6 /* user.png */; };
+		683A69C02255F6A000EFF399 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A69BF2255F6A000EFF399 /* SignUpVC.swift */; };
+		683C8B142278158E007E1CC0 /* functionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C8B132278158E007E1CC0 /* functionCell.swift */; };
 		683E17E722549019001964A4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683E17E622549019001964A4 /* Colors.swift */; };
 		6851AB7B225397D400B9CE1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6851AB7A225397D400B9CE1C /* AppDelegate.swift */; };
-		6851AB7D225397D400B9CE1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6851AB7C225397D400B9CE1C /* ViewController.swift */; };
+		6851AB7D225397D400B9CE1C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6851AB7C225397D400B9CE1C /* MainVC.swift */; };
 		6851AB83225397D400B9CE1C /* Texture_Playground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6851AB81225397D400B9CE1C /* Texture_Playground.xcdatamodeld */; };
 		6851AB85225397D600B9CE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6851AB84225397D600B9CE1C /* Assets.xcassets */; };
 		6851AB88225397D600B9CE1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6851AB86225397D600B9CE1C /* LaunchScreen.storyboard */; };
@@ -45,10 +49,14 @@
 		147275AD044B994442F70E90 /* Pods_Texture_PlaygroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Texture_PlaygroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B08D77AFDB51B5F5FCDAEC /* Pods-Texture-PlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texture-PlaygroundUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Texture-PlaygroundUITests/Pods-Texture-PlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2BFDEEEAA913B1760947F10F /* Pods-Texture-PlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texture-PlaygroundTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Texture-PlaygroundTests/Pods-Texture-PlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6839DA4822772B3600AA12D6 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		6839DA4B22772BD200AA12D6 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		683A69BF2255F6A000EFF399 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		683C8B132278158E007E1CC0 /* functionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functionCell.swift; sourceTree = "<group>"; };
 		683E17E622549019001964A4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		6851AB77225397D400B9CE1C /* Texture-Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Texture-Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6851AB7A225397D400B9CE1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6851AB7C225397D400B9CE1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6851AB7C225397D400B9CE1C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		6851AB82225397D400B9CE1C /* Texture_Playground.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Texture_Playground.xcdatamodel; sourceTree = "<group>"; };
 		6851AB84225397D600B9CE1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6851AB87225397D600B9CE1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,10 +109,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6839DA4A22772B8B00AA12D6 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				6839DA4B22772BD200AA12D6 /* user.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		683C8B122278157E007E1CC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				683C8B132278158E007E1CC0 /* functionCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		683E17E422548FDA001964A4 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				6851AB7C225397D400B9CE1C /* ViewController.swift */,
+				6851AB7C225397D400B9CE1C /* MainVC.swift */,
+				683A69BF2255F6A000EFF399 /* SignUpVC.swift */,
+				6839DA4822772B3600AA12D6 /* UserVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -142,6 +168,8 @@
 		6851AB79225397D400B9CE1C /* Texture-Playground */ = {
 			isa = PBXGroup;
 			children = (
+				683C8B122278157E007E1CC0 /* View */,
+				6839DA4A22772B8B00AA12D6 /* Image */,
 				683E17E522548FE1001964A4 /* Util */,
 				683E17E422548FDA001964A4 /* VC */,
 				6851AB7A225397D400B9CE1C /* AppDelegate.swift */,
@@ -293,6 +321,7 @@
 			files = (
 				6851AB88225397D600B9CE1C /* LaunchScreen.storyboard in Resources */,
 				6851AB85225397D600B9CE1C /* Assets.xcassets in Resources */,
+				6839DA4C22772BD200AA12D6 /* user.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,9 +354,11 @@
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RxASControlEvent/RxASControlEvent.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -336,9 +367,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxASControlEvent.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,8 +452,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				683E17E722549019001964A4 /* Colors.swift in Sources */,
-				6851AB7D225397D400B9CE1C /* ViewController.swift in Sources */,
+				6839DA4922772B3600AA12D6 /* UserVC.swift in Sources */,
+				683C8B142278158E007E1CC0 /* functionCell.swift in Sources */,
+				6851AB7D225397D400B9CE1C /* MainVC.swift in Sources */,
 				6851AB7B225397D400B9CE1C /* AppDelegate.swift in Sources */,
+				683A69C02255F6A000EFF399 /* SignUpVC.swift in Sources */,
 				6851AB83225397D400B9CE1C /* Texture_Playground.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
