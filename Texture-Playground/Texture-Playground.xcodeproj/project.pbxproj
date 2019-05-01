@@ -11,7 +11,8 @@
 		6839DA4922772B3600AA12D6 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6839DA4822772B3600AA12D6 /* UserVC.swift */; };
 		6839DA4C22772BD200AA12D6 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 6839DA4B22772BD200AA12D6 /* user.png */; };
 		683A69C02255F6A000EFF399 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A69BF2255F6A000EFF399 /* SignUpVC.swift */; };
-		683C8B142278158E007E1CC0 /* functionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C8B132278158E007E1CC0 /* functionCell.swift */; };
+		683C8B142278158E007E1CC0 /* functionCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C8B132278158E007E1CC0 /* functionCellNode.swift */; };
+		683C8B1722781997007E1CC0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C8B1622781997007E1CC0 /* ViewModel.swift */; };
 		683E17E722549019001964A4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683E17E622549019001964A4 /* Colors.swift */; };
 		6851AB7B225397D400B9CE1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6851AB7A225397D400B9CE1C /* AppDelegate.swift */; };
 		6851AB7D225397D400B9CE1C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6851AB7C225397D400B9CE1C /* MainVC.swift */; };
@@ -52,7 +53,8 @@
 		6839DA4822772B3600AA12D6 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		6839DA4B22772BD200AA12D6 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		683A69BF2255F6A000EFF399 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		683C8B132278158E007E1CC0 /* functionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functionCell.swift; sourceTree = "<group>"; };
+		683C8B132278158E007E1CC0 /* functionCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functionCellNode.swift; sourceTree = "<group>"; };
+		683C8B1622781997007E1CC0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		683E17E622549019001964A4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		6851AB77225397D400B9CE1C /* Texture-Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Texture-Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6851AB7A225397D400B9CE1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,12 +119,20 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
-		683C8B122278157E007E1CC0 /* View */ = {
+		683C8B122278157E007E1CC0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				683C8B132278158E007E1CC0 /* functionCell.swift */,
+				683C8B132278158E007E1CC0 /* functionCellNode.swift */,
 			);
-			path = View;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		683C8B152278198C007E1CC0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				683C8B1622781997007E1CC0 /* ViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		683E17E422548FDA001964A4 /* VC */ = {
@@ -168,7 +178,8 @@
 		6851AB79225397D400B9CE1C /* Texture-Playground */ = {
 			isa = PBXGroup;
 			children = (
-				683C8B122278157E007E1CC0 /* View */,
+				683C8B152278198C007E1CC0 /* ViewModels */,
+				683C8B122278157E007E1CC0 /* Views */,
 				6839DA4A22772B8B00AA12D6 /* Image */,
 				683E17E522548FE1001964A4 /* Util */,
 				683E17E422548FDA001964A4 /* VC */,
@@ -356,6 +367,7 @@
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/RxASControlEvent/RxASControlEvent.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-Texture/RxCocoa_Texture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
@@ -369,6 +381,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxASControlEvent.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa_Texture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
@@ -453,10 +466,11 @@
 			files = (
 				683E17E722549019001964A4 /* Colors.swift in Sources */,
 				6839DA4922772B3600AA12D6 /* UserVC.swift in Sources */,
-				683C8B142278158E007E1CC0 /* functionCell.swift in Sources */,
+				683C8B142278158E007E1CC0 /* functionCellNode.swift in Sources */,
 				6851AB7D225397D400B9CE1C /* MainVC.swift in Sources */,
 				6851AB7B225397D400B9CE1C /* AppDelegate.swift in Sources */,
 				683A69C02255F6A000EFF399 /* SignUpVC.swift in Sources */,
+				683C8B1722781997007E1CC0 /* ViewModel.swift in Sources */,
 				6851AB83225397D400B9CE1C /* Texture_Playground.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

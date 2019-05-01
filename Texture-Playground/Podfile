@@ -11,6 +11,8 @@ target 'Texture-Playground' do
     	pod 'RxCocoa',    '~> 4.0'
 	pod 'RxASControlEvent'
 	pod 'Then'
+	pod 'RxCocoa-Texture'
+
 
 
   # Pods for Texture-Playground
